@@ -1,7 +1,9 @@
 # Import the module
-Import-Module ./Windows/system/Powershell/modules/SymlinkTools -Force
 
-$dotfilesRoot = "$PSScriptRoot"
+$dotfilesRoot = "../../"
+
+Import-Module $dotfilesRoot/Windows/system/Powershell/modules/SymlinkTools -Force
+
 
 # Define source/target pairs
 $symlinks = @(
