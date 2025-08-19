@@ -26,5 +26,6 @@
         "10.0.3.26": "linux",
         "ubuntu-proxmox": "linux"
     },
-    "workbench.secondarySideBar.defaultVisibility": "hidden"
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "git.autofetch": true
 }
