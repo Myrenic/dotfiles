@@ -1,8 +1,6 @@
 # Import the module
 Import-Module ./Windows/system/Powershell/modules/SymlinkTools -Force
 
-winget import -i ./Windows/apps/winget/packages.json --ignore-versions --accept-package-agreements --accept-source-agreements --disable-interactivity --wait
-
 $dotfilesRoot = "$PSScriptRoot"
 
 # Define source/target pairs
