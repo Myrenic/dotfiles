@@ -1,0 +1,30 @@
+{
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmPasteNative": false,
+    "explorer.confirmDelete": false,
+    "git.confirmSync": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "git.enableSmartCommit": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "workbench.colorTheme": "Solarized Light",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": false
+    },
+    "security.allowedUNCHosts": [
+        "nlgronetapnas1"
+    ],
+    "security.restrictUNCAccess": false,
+    "python.createEnvironment.trigger": "off",
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "remote.SSH.remotePlatform": {
+        "10.0.3.26": "linux",
+        "ubuntu-proxmox": "linux"
+    },
+    "workbench.secondarySideBar.defaultVisibility": "hidden"
+}
