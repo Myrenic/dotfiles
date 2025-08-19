@@ -214,4 +214,20 @@ function kubeView(){
     $paneManagerClass.SetInitialCommand("powershell ssh $($username)@$($hostname)");
     Start-Process wt $paneManagerClass;
 }
-Export-ModuleMember -Function kubeView
+
+
+function MultipaneView(){
+    $culture = [System.Globalization.CultureInfo]::CreateSpecificCulture("en-US") 
+    $culture.NumberFormat.NumberDecimalSeparator = "." 
+    $culture.NumberFormat.NumberGroupSeparator = "," 
+    [System.Threading.Thread]::CurrentThread.CurrentCulture = $culture
+
+
+    $paneManagerClass = ([PaneManager]::new()).
+        AddPane("powershell powershell", '-V', 0.5).
+        MoveFocus("up");
+    $paneManagerClass.SetInitialCommand("powershell");
+    Start-Process wt $paneManagerClass;
+}
+
+Export-ModuleMember -Function kubeView,MultipaneView
