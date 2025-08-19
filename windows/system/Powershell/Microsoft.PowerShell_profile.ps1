@@ -17,5 +17,5 @@
 # See settings below for basic
 
 
-write-host "Scripts loaded"
+Set-Alias -Name k -Value kubeView
 
