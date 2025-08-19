@@ -1,6 +1,6 @@
 # Import the module
 
-$dotfilesRoot = "../../"
+$dotfilesRoot = "../.."
 
 Import-Module $dotfilesRoot/Windows/system/Powershell/modules/SymlinkTools -Force
 
