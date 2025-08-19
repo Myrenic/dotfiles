@@ -14,7 +14,7 @@ function New-Symlink {
     if (Test-Path $Link) {
         Remove-Item -Path $Link -Force -ErrorAction SilentlyContinue -Confirm:$false -Recurse
     }
-    $null = New-Item -ItemType SymbolicLink -Path $Link -Target $Target -ErrorAction SilentlyContinue
+    New-Item -ItemType SymbolicLink -Path $Link -Target $Target -ErrorAction SilentlyContinue
 }
 
 function New-Symlinks {
