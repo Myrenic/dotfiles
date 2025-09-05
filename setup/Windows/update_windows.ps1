@@ -19,7 +19,7 @@ $symlinks = @(
 # Call the helper function
 New-Symlinks -Links $symlinks
 
-code --list-extensions > extensions.txt
-code --list-extensions | ForEach-Object { code --uninstall-extension $_ }
-Get-Content extensions.txt | ForEach-Object { code --install-extension $_ }
-remove-item extensions.txt
+#code --list-extensions > extensions.txt
+#code --list-extensions | ForEach-Object { code --uninstall-extension $_ }
+#Get-Content extensions.txt | ForEach-Object { code --install-extension $_ }
+#remove-item extensions.txt

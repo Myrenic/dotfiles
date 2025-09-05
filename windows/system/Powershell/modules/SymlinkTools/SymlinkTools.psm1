@@ -24,6 +24,7 @@ function New-Symlinks {
     )
 
     foreach ($link in $Links) {
+	write-host $link.Target
         New-Symlink -Target $link.Target -Link $link.Link
     }
 }
