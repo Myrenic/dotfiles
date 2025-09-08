@@ -49,7 +49,7 @@ function Show-GitHubTree {
     $treeSha = $commit.tree.sha
 
     # 4. Get recursive tree
-    $tree = Invoke-RestMethod -Uri "$($baseUrl)/git/trees/$($treeSha)?recursive=1" -Headers $headers
+    $tree = Invoke-RestMethod -Uri "$($apiUrl)/git/trees/$($treeSha)?recursive=1" -Headers $headers
 
     # 5. Prepare output
     $urls = $tree.tree | ForEach-Object {
